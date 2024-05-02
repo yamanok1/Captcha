@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Captcha App</title>
+  </head>
+  <body>
+    <div class="captcha-container">
+      <img src="bg.png" alt="" />
+      <div class="captcha">
+        <canvas id="captcha" width="200" height="400"></canvas>
+        <button id="reload-captcha">Reload</button>
+      </div>
+      <div class="user">
+        <input type="text" id="captcha-input" placeholder="Enter CAPTCHA" />
+        <button id="check-captcha">Check</button>
+      </div>
+      <p id="captcha-status">Status : IDLE</p>
+    </div>
+  </body>
+</html>
